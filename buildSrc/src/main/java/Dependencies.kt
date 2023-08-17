@@ -100,6 +100,7 @@ object Libs {
         "com.squareup.okhttp3:okhttp:${Versions.OKHTTP_LOGGING_INTERCEPTOR_VERSION}"
     val gsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.GSON_CONVERTER}"
     val roomAndroid ="androidx.room:room-runtime:${Versions.room_version}"
+    val roomKtx ="androidx.room:room-ktx:${Versions.room_version}"
     val roomAnnotationProcessor ="androidx.room:room-compiler:${Versions.room_version}"
     val roomKapt="androidx.room:room-compiler:${Versions.room_version}"
     val googleMap = "com.google.android.gms:play-services-maps:${Versions.GOOGLE_MAP}"

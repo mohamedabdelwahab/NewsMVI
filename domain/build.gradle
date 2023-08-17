@@ -38,6 +38,14 @@ dependencies {
 // di
     implementation Libs.INSTANCE.hiltAndroid
     kapt Libs.INSTANCE.hiltAndroidCompiler
+    // Paging 3
+    implementation "androidx.paging:paging-runtime-ktx:3.2.0"
+    implementation Libs.INSTANCE.gson
 
     //testImplementation TestLibs.junit
+
+    //local data source
+    implementation Libs.INSTANCE.roomAndroid
+    kapt  Libs.INSTANCE.roomKapt
+
 }

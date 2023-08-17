@@ -1,5 +1,4 @@
 object AppConfig{
-    const val API_BASE_URL = "https://newsapi.org/v2/"
 
     const val compileSdk = 33
     const val minSdk = 21

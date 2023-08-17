@@ -1,5 +1,6 @@
 package com.mohamed.data.network
 
+import com.mohamed.data.util.API_KEY
 import okhttp3.Interceptor
 import okhttp3.Response
 import javax.inject.Inject
@@ -12,6 +13,7 @@ class HeaderInterceptor @Inject constructor():Interceptor {
         val requestBuilder = original.newBuilder()
         requestBuilder.addHeader("Content-Type", "application/json")
         requestBuilder.addHeader("Accept", "application/json")
+        requestBuilder.addHeader("X-Api-Key", API_KEY)
         val request = requestBuilder.build()
         return chain.proceed(request)
     }

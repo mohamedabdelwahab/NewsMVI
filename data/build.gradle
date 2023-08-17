@@ -50,6 +50,8 @@ dependencies {
     //local data source
     implementation Libs.INSTANCE.roomAndroid
     kapt  Libs.INSTANCE.roomKapt
+    implementation Libs.INSTANCE.roomKtx
+
 
     implementation Libs.INSTANCE.coreCoroutines
 // di
@@ -59,4 +61,8 @@ dependencies {
 //    testImplementation TestLibs.junit
 //    androidTestImplementation TestLibs.junitExt
 //    androidTestImplementation TestLibs.espresso
+
+    // Paging 3
+    implementation "androidx.paging:paging-runtime-ktx:3.1.0"
+
 }
