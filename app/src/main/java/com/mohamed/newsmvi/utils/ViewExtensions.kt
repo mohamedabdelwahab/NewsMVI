@@ -19,13 +19,9 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.widget.AppCompatEditText
 import com.mohamed.newsmvi.BuildConfig
-import com.mohamed.newsmvi.extensions.ViewSidesEnum
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Job
-import kotlinx.coroutines.delay
+import com.mohamed.newsmvi.utils.ViewSidesEnum
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.launch
 import java.io.ByteArrayOutputStream
 import java.io.File
 import java.text.DateFormat

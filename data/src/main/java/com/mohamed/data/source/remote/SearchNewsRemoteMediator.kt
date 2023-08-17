@@ -20,7 +20,8 @@ class SearchNewsRemoteMediator(
     private val searchQuery: String,
     private val newsApi: NewsService,
     private val newsArticleDb: NewsDatabase,
-    private val refreshOnInit: Boolean
+    private val refreshOnInit: Boolean,
+    private val langauge: String
 ) : RemoteMediator<Int, NewsDto>() {
 
     private val newsArticleDao = newsArticleDb.newsDao()
@@ -39,7 +40,7 @@ class SearchNewsRemoteMediator(
         }
 
         try {
-            val response = newsApi.searchNews(searchQuery, page, state.config.pageSize)
+            val response = newsApi.searchNews(searchQuery, page, state.config.pageSize,langauge)
             val serverSearchResults = response.articles
 
             val searchResultArticles = serverSearchResults?.map { serverSearchResultArticle ->

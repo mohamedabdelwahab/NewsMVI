@@ -1,4 +1,4 @@
-package com.mohamed.newsmvi.searchNews
+package com.mohamed.newsmvi.searchNews.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

@@ -11,8 +11,10 @@ import androidx.paging.LoadState
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mohamed.newsmvi.R
 import com.mohamed.newsmvi.databinding.FragmentSearchNewsBinding
-import com.mohamed.newsmvi.extensions.debounce
-import com.mohamed.newsmvi.extensions.showErrorMessage
+import com.mohamed.newsmvi.utils.debounce
+import com.mohamed.newsmvi.utils.showErrorMessage
+import com.mohamed.newsmvi.searchNews.adapter.NewsArticleLoadStateAdapter
+import com.mohamed.newsmvi.searchNews.adapter.NewsArticlePagingAdapter
 import com.mohamed.sampleapp.core.extensions.onTextChange
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
@@ -37,7 +39,7 @@ class SearchNewsFragment : Fragment(R.layout.fragment_search_news) {
         newsArticleAdapter = NewsArticlePagingAdapter(
             onItemClick = { article ->
                 findNavController().navigate(
-                    SearchNewsFragmentDirections.actionCategoryToNewsDetailsFragment(
+                    SearchNewsFragmentDirections.actionArticlesToNewsDetailsFragment(
                         article
                     )
                 )
@@ -62,6 +64,7 @@ class SearchNewsFragment : Fragment(R.layout.fragment_search_news) {
 
             viewLifecycleOwner.lifecycleScope.launchWhenStarted {
                 viewModel.hasCurrentQuery.collect { hasCurrentQuery ->
+                    textViewInstructions.isVisible = !hasCurrentQuery
                     swipeRefreshLayout.isEnabled = hasCurrentQuery
 
                     if (!hasCurrentQuery) {

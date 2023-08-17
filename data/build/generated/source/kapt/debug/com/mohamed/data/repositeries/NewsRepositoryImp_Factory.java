@@ -3,6 +3,7 @@ package com.mohamed.data.repositeries;
 
 import com.mohamed.data.source.local.NewsDatabase;
 import com.mohamed.data.source.remote.NewsService;
+import com.mohamed.domain.repositories.ISharedPrefrance;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
 import dagger.internal.QualifierMetadata;
@@ -23,23 +24,29 @@ public final class NewsRepositoryImp_Factory implements Factory<NewsRepositoryIm
 
   private final Provider<NewsDatabase> newsArticleDbProvider;
 
+  private final Provider<ISharedPrefrance> iSharedPrefranceProvider;
+
   public NewsRepositoryImp_Factory(Provider<NewsService> newsApiProvider,
-      Provider<NewsDatabase> newsArticleDbProvider) {
+      Provider<NewsDatabase> newsArticleDbProvider,
+      Provider<ISharedPrefrance> iSharedPrefranceProvider) {
     this.newsApiProvider = newsApiProvider;
     this.newsArticleDbProvider = newsArticleDbProvider;
+    this.iSharedPrefranceProvider = iSharedPrefranceProvider;
   }
 
   @Override
   public NewsRepositoryImp get() {
-    return newInstance(newsApiProvider.get(), newsArticleDbProvider.get());
+    return newInstance(newsApiProvider.get(), newsArticleDbProvider.get(), iSharedPrefranceProvider.get());
   }
 
   public static NewsRepositoryImp_Factory create(Provider<NewsService> newsApiProvider,
-      Provider<NewsDatabase> newsArticleDbProvider) {
-    return new NewsRepositoryImp_Factory(newsApiProvider, newsArticleDbProvider);
+      Provider<NewsDatabase> newsArticleDbProvider,
+      Provider<ISharedPrefrance> iSharedPrefranceProvider) {
+    return new NewsRepositoryImp_Factory(newsApiProvider, newsArticleDbProvider, iSharedPrefranceProvider);
   }
 
-  public static NewsRepositoryImp newInstance(NewsService newsApi, NewsDatabase newsArticleDb) {
-    return new NewsRepositoryImp(newsApi, newsArticleDb);
+  public static NewsRepositoryImp newInstance(NewsService newsApi, NewsDatabase newsArticleDb,
+      ISharedPrefrance iSharedPrefrance) {
+    return new NewsRepositoryImp(newsApi, newsArticleDb, iSharedPrefrance);
   }
 }

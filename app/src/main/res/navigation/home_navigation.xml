@@ -2,15 +2,15 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@id/category">
+    app:startDestination="@id/languageFragment">
 
     <fragment
-        android:id="@+id/category"
+        android:id="@+id/articles"
         android:name="com.mohamed.newsmvi.searchNews.SearchNewsFragment"
         android:label="SplashFragment"
         tools:layout="@layout/fragment_search_news" >
         <action
-            android:id="@+id/action_category_to_newsDetailsFragment"
+            android:id="@+id/action_articles_to_newsDetailsFragment"
             app:destination="@id/newsDetailsFragment" />
     </fragment>
     <fragment
@@ -20,6 +20,14 @@
         <argument
             android:name="news"
             app:argType="com.mohamed.domain.entity.NewsDto" />
+    </fragment>
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.mohamed.newsmvi.LanguageFragment"
+        android:label="LanguageFragment" >
+        <action
+            android:id="@+id/action_languageFragment_to_articles"
+            app:destination="@id/articles" />
     </fragment>
 
 

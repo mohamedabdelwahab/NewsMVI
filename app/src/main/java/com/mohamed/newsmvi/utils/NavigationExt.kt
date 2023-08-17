@@ -1,4 +1,4 @@
-package com.mohamed.newsmvi.extensions
+package com.mohamed.newsmvi.utils
 
 import android.net.Uri
 import android.os.Bundle

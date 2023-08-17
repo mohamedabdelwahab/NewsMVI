@@ -1,4 +1,4 @@
-package com.mohamed.newsmvi.extensions
+package com.mohamed.newsmvi.utils
 
 import android.annotation.SuppressLint
 import android.content.Context

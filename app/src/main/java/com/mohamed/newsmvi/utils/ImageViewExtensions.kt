@@ -1,4 +1,4 @@
-package com.mohamed.newsmvi.extensions
+package com.mohamed.newsmvi.utils
 
 import android.content.Context
 import androidx.appcompat.widget.AppCompatImageView

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:text="@string/choose_language"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <RadioGroup
+        android:id="@+id/languageRadio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        tools:layout_editor_absoluteX="21dp">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/arabic_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/selector_white_rounded_green_stroke"
+            android:button="@null"
+            android:drawableStart="@drawable/ic_arabic_flag"
+            android:drawablePadding="8dp"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:text="@string/arabic"
+            android:textAlignment="viewStart" />
+
+        <RadioButton
+            android:id="@+id/english_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/selector_white_rounded_green_stroke"
+            android:button="@null"
+            android:drawableStart="@drawable/ic_english_flag"
+            android:drawablePadding="8dp"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:text="@string/english"
+            android:textAlignment="viewStart" />
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_margin="16dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/save_changes"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="21dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

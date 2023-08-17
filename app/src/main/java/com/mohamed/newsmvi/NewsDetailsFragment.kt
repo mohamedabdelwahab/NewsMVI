@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.mohamed.newsmvi.databinding.FragmentNewsDetailsBinding
-import com.mohamed.newsmvi.extensions.loadImage
+import com.mohamed.newsmvi.utils.loadImage
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

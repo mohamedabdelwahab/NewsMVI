@@ -1,9 +1,9 @@
-package com.mohamed.newsmvi.searchNews
+package com.mohamed.newsmvi.searchNews.adapter
 
 import androidx.recyclerview.widget.RecyclerView
 import com.mohamed.domain.entity.NewsDto
 import com.mohamed.newsmvi.databinding.ItemNewsArticleBinding
-import com.mohamed.newsmvi.extensions.loadImage
+import com.mohamed.newsmvi.utils.loadImage
 
 class NewsArticleViewHolder(
     private val binding: ItemNewsArticleBinding,

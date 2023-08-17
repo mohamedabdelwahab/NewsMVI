@@ -1,4 +1,4 @@
-package com.mohamed.newsmvi.extensions
+package com.mohamed.newsmvi.utils
 
 enum class ViewSidesEnum(val side: Int) {
     LEFT(0),

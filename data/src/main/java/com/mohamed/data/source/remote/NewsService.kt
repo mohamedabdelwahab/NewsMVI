@@ -10,6 +10,7 @@ interface NewsService {
         @Query("q") query: String,
         @Query("page") page: Int,
         @Query("pageSize") pageSize: Int,
+        @Query("language") language: String = "en",
         @Query("sortBy") sortBy: String = "publishedAt"
     ): NewsResponse
 }
