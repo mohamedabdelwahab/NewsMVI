@@ -41,9 +41,6 @@ class SearchNewsFragment : Fragment(R.layout.fragment_search_news) {
                         article
                     )
                 )
-//                val uri = Uri.parse(article.url)
-//                val intent = Intent(Intent.ACTION_VIEW, uri)
-//                requireActivity().startActivity(intent)
             }
         )
 
