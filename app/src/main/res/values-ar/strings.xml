@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NewsMVI</string>
+    <string name="ok">حسنا</string>
+    <string name="check_internet_connections">تأكد من اتصال الانترنت</string>
+    <string name="unknown_error_occurred">خطا غير معرف</string>
+    <string name="retry">حاول مرة اخري</string>
+    <string name="no_results_found">لاتوجد نتائج</string>
+    <string name="search_instructions">ابحث بالعنوان للحصول علي نتائج</string>
+    <string name="change_language">تغيير اللغة</string>
+    <string name="choose_language">اختر اللغة</string>
+    <string name="english">الانجليزي</string>
+    <string name="arabic">العربي</string>
+    <string name="save_changes">حفظ التغييرات</string>
+    <string name="open_article">Open Article</string>
+    <string name="author">الكاتب :</string>
+    <string name="source">المصدر :</string>
+
+</resources>

@@ -120,7 +120,7 @@
         app:backgroundTint="@color/purple_700"
         app:cornerRadius="16dp"
         android:textSize="17sp"
-        android:text="Open Article"
+        android:text="@string/open_article"
         app:iconGravity="textStart"
         app:iconTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"

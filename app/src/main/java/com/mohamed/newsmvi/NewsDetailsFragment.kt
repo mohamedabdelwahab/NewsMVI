@@ -36,12 +36,11 @@ class NewsDetailsFragment : Fragment() {
         binding.apply {
             image.loadImage(args.news.urlToImage)
             date.text = args.news.publishedAt
-            author.text = args.news.author
-            source.text = args.news.source
+            author.text = "${getString(R.string.author)} ${args.news.author}"
+            source.text = "${getString(R.string.source)} ${args.news.source}"
             title.text = args.news.title
             description.text = args.news.description
             content.text = args.news.content
-
         }
     }
 
@@ -51,8 +50,5 @@ class NewsDetailsFragment : Fragment() {
             val intent = Intent(Intent.ACTION_VIEW, uri)
             requireActivity().startActivity(intent)
         }
-
     }
-
-
 }
