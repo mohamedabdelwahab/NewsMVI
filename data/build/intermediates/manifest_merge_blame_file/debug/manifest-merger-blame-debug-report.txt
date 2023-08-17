@@ -4,8 +4,8 @@
 4
 5    <uses-sdk
 6        android:minSdkVersion="21"
-6-->F:\tmp\NewsMVI\data\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest9600279461036106887.xml
+6-->F:\tmp\NewsMVI\data\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest13446521682278682056.xml
 7        android:targetSdkVersion="33" />
-7-->F:\tmp\NewsMVI\data\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest9600279461036106887.xml
+7-->F:\tmp\NewsMVI\data\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest13446521682278682056.xml
 8
 9</manifest>

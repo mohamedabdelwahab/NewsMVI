@@ -5,6 +5,6 @@ import androidx.room.Entity
 @Entity(tableName = "search_news", primaryKeys = ["searchQuery", "newsUrl"])
 class SearchNews(
     val searchQuery: String,
-    val newsUrl: String?,
+    val newsUrl: String,
     val sort: Int
 )

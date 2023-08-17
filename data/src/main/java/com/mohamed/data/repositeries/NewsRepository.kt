@@ -7,18 +7,19 @@ import androidx.paging.PagingData
 import com.mohamed.data.source.local.NewsDatabase
 import com.mohamed.data.source.remote.NewsService
 import com.mohamed.data.source.remote.SearchNewsRemoteMediator
-import com.mohamed.domain.model.NewsDto
+import com.mohamed.domain.entity.NewsDto
+import com.mohamed.domain.repositories.NewsRepository
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
-class NewsRepository @Inject constructor(
+class NewsRepositoryImp @Inject constructor(
     private val newsApi: NewsService,
     private val newsArticleDb: NewsDatabase
-) {
+) : NewsRepository {
     private val newsArticleDao = newsArticleDb.newsDao()
 
     @OptIn(ExperimentalPagingApi::class)
-    fun getSearchResultsPaged(
+    override fun getSearchResultsPaged(
         query: String,
         refreshOnInit: Boolean
     ): Flow<PagingData<NewsDto>> =
@@ -27,6 +28,5 @@ class NewsRepository @Inject constructor(
             remoteMediator = SearchNewsRemoteMediator(query, newsApi, newsArticleDb, refreshOnInit),
             pagingSourceFactory = { newsArticleDao.getSearchResultArticlesPaged(query) }
         ).flow
-
 
 }

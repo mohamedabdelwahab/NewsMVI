@@ -1,25 +1,25 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14828503513064527793.xml:2:13-83
-INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14828503513064527793.xml:2:13-83
-INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14828503513064527793.xml:2:13-83
+ADDED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1906730495653083986.xml:2:13-83
+INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1906730495653083986.xml:2:13-83
+INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1906730495653083986.xml:2:13-83
 	package
-		INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14828503513064527793.xml
-		ADDED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14828503513064527793.xml:2:13-83
-		INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14828503513064527793.xml
+		INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1906730495653083986.xml
+		ADDED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1906730495653083986.xml:2:13-83
+		INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1906730495653083986.xml
 	xmlns:android
-		ADDED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14828503513064527793.xml:2:23-81
+		ADDED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1906730495653083986.xml:2:23-81
 uses-sdk
-INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14828503513064527793.xml reason: use-sdk injection requested
-INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14828503513064527793.xml
-INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14828503513064527793.xml
-INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14828503513064527793.xml
-INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14828503513064527793.xml
+INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1906730495653083986.xml reason: use-sdk injection requested
+INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1906730495653083986.xml
+INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1906730495653083986.xml
+INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1906730495653083986.xml
+INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1906730495653083986.xml
 	android:targetSdkVersion
-		INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14828503513064527793.xml
-		ADDED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14828503513064527793.xml
-		INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14828503513064527793.xml
+		INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1906730495653083986.xml
+		ADDED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1906730495653083986.xml
+		INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1906730495653083986.xml
 	android:minSdkVersion
-		INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14828503513064527793.xml
-		ADDED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14828503513064527793.xml
-		INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14828503513064527793.xml
+		INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1906730495653083986.xml
+		ADDED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1906730495653083986.xml
+		INJECTED from F:\tmp\NewsMVI\domain\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1906730495653083986.xml

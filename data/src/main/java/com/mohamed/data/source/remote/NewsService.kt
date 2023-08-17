@@ -9,6 +9,7 @@ interface NewsService {
     suspend fun searchNews(
         @Query("q") query: String,
         @Query("page") page: Int,
-        @Query("pageSize") pageSize: Int
+        @Query("pageSize") pageSize: Int,
+        @Query("sortBy") sortBy: String = "publishedAt"
     ): NewsResponse
 }

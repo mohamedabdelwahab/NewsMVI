@@ -1,4 +1,3 @@
-
 package com.mohamed.data.source.remote
 
 import androidx.paging.ExperimentalPagingApi
@@ -9,7 +8,7 @@ import androidx.room.withTransaction
 import com.mohamed.data.entity.SearchKey
 import com.mohamed.data.entity.SearchNews
 import com.mohamed.data.source.local.NewsDatabase
-import com.mohamed.domain.model.NewsDto
+import com.mohamed.domain.entity.NewsDto
 import retrofit2.HttpException
 import java.io.IOException
 
@@ -43,12 +42,16 @@ class SearchNewsRemoteMediator(
             val response = newsApi.searchNews(searchQuery, page, state.config.pageSize)
             val serverSearchResults = response.articles
 
-
             val searchResultArticles = serverSearchResults?.map { serverSearchResultArticle ->
                 NewsDto(
-                    title = serverSearchResultArticle.title,
                     url = serverSearchResultArticle.url,
+                    publishedAt = serverSearchResultArticle.publishedAt,
+                    author = serverSearchResultArticle.author,
                     urlToImage = serverSearchResultArticle.urlToImage,
+                    description = serverSearchResultArticle.description,
+                    title = serverSearchResultArticle.title,
+                    content = serverSearchResultArticle.content,
+                    source = serverSearchResultArticle.source?.name,
                 )
             }
 

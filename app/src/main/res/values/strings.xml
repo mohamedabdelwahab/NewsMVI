@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">NewsMVI</string>
+    <string name="ok">ok</string>
+    <string name="check_internet_connections">check_internet_connections</string>
+    <string name="unknown_error_occurred">unknown_error_occurred</string>
+    <string name="retry">retry</string>
+    <string name="no_results_found">no_results_found</string>
+    <string name="search_instructions">search_instructions</string>
 </resources>

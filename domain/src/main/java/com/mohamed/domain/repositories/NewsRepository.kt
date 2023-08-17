@@ -1,7 +1,7 @@
 package com.mohamed.domain.repositories
 
 import androidx.paging.PagingData
-import com.mohamed.domain.model.NewsDto
+import com.mohamed.domain.entity.NewsDto
 import kotlinx.coroutines.flow.Flow
 
 interface NewsRepository {

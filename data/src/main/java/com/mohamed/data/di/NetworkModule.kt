@@ -4,6 +4,7 @@ import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.mohamed.data.BuildConfig
 import com.mohamed.data.network.HeaderInterceptor
+import com.mohamed.data.source.remote.NewsService
 import com.mohamed.data.util.BASE_URl
 import dagger.Module
 import dagger.Provides
@@ -56,6 +57,12 @@ object NetworkModule {
             .addConverterFactory(GsonConverterFactory.create())
             .client(okHttpClient)
             .build()
+    }
+
+    @Provides
+    @Singleton
+    fun provideDriverApi(retrofit: Retrofit): NewsService {
+        return retrofit.create(NewsService::class.java)
     }
 
 
